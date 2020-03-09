@@ -3,6 +3,9 @@ Compiler design coursework
 
 A program to satisfy the requirements of the compiler design coursework
 """
+
+ARROW = "→"
+
 def readfile(filename):
     """ Reads the file from the filename passed in and returns the data in an array line for line"""
     data = []
@@ -13,5 +16,8 @@ def readfile(filename):
 
     return data
 
+
+FILENAME = "example.txt"
+data = readfile(FILENAME)
 
 
