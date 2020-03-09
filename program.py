@@ -17,7 +17,26 @@ def readfile(filename):
     return data
 
 
+
+def parsedata(data):
+    """
+    Reads the data and parses it into variables
+    """
+    variables = []
+    constants = []
+    predicates = []
+    equality = []
+    connectives = []
+    quantifiers = []
+    formula = []
+    
+    for line in data:
+        line = line.strip().split()
+        line = [part.strip() for part in line]
+
+
+    return variables, constants, predicates, equality, connectives, quantifiers, formula
+
 FILENAME = "example.txt"
 data = readfile(FILENAME)
-
-
+parsedata(data)
