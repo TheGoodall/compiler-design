@@ -1,0 +1,14 @@
+Non-Terminals: w, x, y, z, C, D, P[2], Q[1], =, \land, \lor, \implies, \iff, \neg, \exists, \forall, ,,  , (, ), 
+Terminals::F, :Q, :V, :N, :¬, :C, :P, :=, 
+Production rules:
+:V→w|x|y|z
+:C→C|D
+:P→P(:D,:D)|Q(:D)
+:D→:V|:C
+:F'→R=R)|:F:F''
+:F''→:N :F)
+:F→:Q :V :F|:P|(:F'|:¬:F
+:N→\land|\lor|\implies|\iff
+:¬→\neg
+:Q→\exists|\forall
+:S→:F

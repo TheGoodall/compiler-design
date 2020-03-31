@@ -1,0 +1,6 @@
+digraph {
+	{
+		rank=same
+	}
+	1 [label=":S"]
+}
